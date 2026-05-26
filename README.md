@@ -1,6 +1,6 @@
 # SpringBoot with K8s(Docker Desktop) Playground 
 
-- local Kubernetes playground using Docker Desktop
+- local Kubernetes playground using Docker Desktop enough to understand basics of k8s, not deep DevOps 
 - test Kubernetes self-healing by intentionally crashing pods through a trigger-crash endpoint
 - write the yml config files with understanding
 
