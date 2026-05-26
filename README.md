@@ -1,7 +1,8 @@
 # SpringBoot with K8s(Docker Desktop) Playground 
 
-- test and see Kubernetes's self-healing when pods/app intentionally crashed when visiting the trigger-crash controller 
-- write the yml files with understanding
+- local Kubernetes playground using Docker Desktop
+- test Kubernetes self-healing by intentionally crashing pods through a trigger-crash endpoint
+- write the yml config files with understanding
 
 ### Concepts learned:
 
