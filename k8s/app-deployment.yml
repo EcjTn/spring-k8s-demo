@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: spring-k8s-demo
-  template:
+  template: # Blueprint for future Pods
     metadata:
       labels:
         app: spring-k8s-demo
