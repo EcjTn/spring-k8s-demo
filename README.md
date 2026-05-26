@@ -13,7 +13,7 @@
 - Deployment✅
 - ConfigMap✅
 - Secrets✅
-- Service✅
+- Service✅ (important for microservices inter-service communication)
 - Namespace✅
 - Ingress❌
 - Readiness & Liveness Probe(with Actuator)❌
