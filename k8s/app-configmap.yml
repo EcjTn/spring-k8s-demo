@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-k8s-demo-configmap # reference in deployments
+
+data: # key-value pairs
+  my-word: "this is a demo for spring boot in k8s"
+
+  

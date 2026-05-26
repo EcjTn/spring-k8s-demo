@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: app-service # this becomes the host name for http requests (if with microservices)
+spec:
+  selector:
+    app: spring-k8s-demo # Finds pods that matches this selector
+  ports:
+    - port:  80 # Port exposed by the service
+      targetPort:  8080 # Port exposed by the pod

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-k8s-demo-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spring-k8s-demo
+  template:
+    metadata:
+      labels:
+        app: spring-k8s-demo
+    spec:
+      containers:
+      - name: app
+        image: spring-k8s-demo:latest
+        envFrom:
+        - configMapRef:
+            name: spring-k8s-demo-configmap
+        ports:
+        - containerPort: 8080

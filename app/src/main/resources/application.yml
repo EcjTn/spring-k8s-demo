@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-k8s-demo
+
+my-word: ${MY_WORD:hello-from-default}
