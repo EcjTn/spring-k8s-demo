@@ -1,8 +1,14 @@
+# Not really used in this project since im only using one pod (just wanted to try it out)
+# But useful for multi-pod deployments
+# Using the quick port forwarding command instead
+# kubectl port-forward pod/pod-name <local-port>:<container-port>
+
 kind: Service
 apiVersion: v1
 metadata:
-  name: app-service # this becomes the host name for http requests (if with microservices)
+  name: spring-k8s-demo-service # this becomes the host name for http requests (if with microservices)
 spec:
+  type: ClusterIP # Only accessible within the cluster (the default)
   selector:
     app: spring-k8s-demo # Finds pods that matches this selector
   ports:

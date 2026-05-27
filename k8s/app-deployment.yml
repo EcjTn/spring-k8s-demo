@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: app
-        image: spring-k8s-demo:latest
+        image: spring-k8s-demo
+        imagePullPolicy: Never
         envFrom:
         - configMapRef:
             name: spring-k8s-demo-configmap
