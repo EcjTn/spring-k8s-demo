@@ -6,14 +6,14 @@
 
 ### Concepts learned:
 
-- Cluster & kubectl cmds (also for debugging)✅
-- Control Plane & Worker Nodes✅
-- Nodes✅
-- Pods✅
-- Deployment✅
-- ConfigMap✅
-- Secrets✅
-- Service✅ (important for microservices inter-service communication)
-- Namespace✅
-- Ingress❌
-- Readiness & Liveness Probe(with Actuator)❌
+- [x] Cluster & kubectl cmds (also for debugging)
+- [x] Control Plane & Worker Nodes
+- [x] Nodes
+- [x] Pods
+- [x] Deployment
+- [x] ConfigMap
+- [x] Secrets
+- [x] Service (important for microservices inter-service communication)
+- [x] Namespace
+- [ ] Ingress
+- [ ] Readiness & Liveness Probe(with Actuator)
