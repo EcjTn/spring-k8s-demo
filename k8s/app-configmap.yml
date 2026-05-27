@@ -5,5 +5,3 @@ metadata:
 
 data: # key-value pairs
   my-word: "this is a demo for spring boot in k8s"
-
-  

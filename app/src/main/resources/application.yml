@@ -3,3 +3,5 @@ spring:
     name: spring-k8s-demo
 
 my-word: ${MY_WORD:hello-from-default}
+
+my-secret: ${SECRET_EXAMPLE_KEY:secret-default}

@@ -12,6 +12,9 @@ public class HomeController {
     @Value("${my-word}")
     private String myword;
 
+    @Value("${my-secret}")
+    private String mysecret;
+
     @GetMapping("/myword")
     public String hello() {
         return myword;
@@ -27,6 +30,11 @@ public class HomeController {
     public String crashOnPurpose() {
         System.exit(1);
         return "this line is never reached";
+    }
+
+    @GetMapping("/mysecret")
+    public String whichSecret() {
+        return mysecret;
     }
 
 }
