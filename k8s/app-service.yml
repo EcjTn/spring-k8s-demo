@@ -1,4 +1,4 @@
-# Not really used in this project since im only using one pod (just wanted to try it out)
+# Not really used in this project since im only using one deployment (just wanted to try it out)
 # But useful for multi-pod deployments
 # Using the quick port forwarding command instead
 # kubectl port-forward pod/pod-name <local-port>:<container-port>
