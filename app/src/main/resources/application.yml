@@ -2,6 +2,10 @@ spring:
   application:
     name: spring-k8s-demo
 
+# Liveness and readiness probes are enabled by default in Spring Boot 4
+# No need extra config for actuator health, readiness and liveness.
+# https://dimitri.codes/actuator-health-probes/
+
 my-word: ${MY_WORD:hello-from-default}
 
 my-secret: ${SECRET_EXAMPLE_KEY:secret-default}

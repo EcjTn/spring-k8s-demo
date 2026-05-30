@@ -15,5 +15,5 @@
 - [x] Secrets
 - [x] Service (important for microservices inter-service communication)
 - [x] Namespace
+- [x] Readiness & Liveness Probe(with Actuator)
 - [ ] Ingress
-- [ ] Readiness & Liveness Probe(with Actuator)

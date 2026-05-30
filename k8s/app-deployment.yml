@@ -23,3 +23,17 @@ spec:
             name: spring-k8s-demo-secret
         ports:
         - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /actuator/health/liveness
+            port: 8080
+          initialDelaySeconds: 30   # wait before first check (app might be slow to start)
+          periodSeconds: 10         # check every 10s
+          failureThreshold: 3       # restart pod after 3 failures
+        readinessProbe:
+          httpGet:
+            path: /actuator/health/readiness
+            port: 8080
+          initialDelaySeconds: 30   # same — give app time to connect to DB, etc.
+          periodSeconds: 10
+          failureThreshold: 3        # remove from load balancer after 3 failures
